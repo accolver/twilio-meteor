@@ -7,14 +7,14 @@ Package.describe({
 
 Package.onUse(function(api) {
   api.versionsFrom('1.0');
-  api.addFiles('accolver:twilio-meteor.js');
+  api.addFiles('accolver:twilio-meteor.js', 'server');
   api.export('Twilio', 'server');
 });
 
 Package.onTest(function(api) {
   api.use('tinytest');
   api.use('accolver:twilio-meteor');
-  api.addFiles('accolver:twilio-meteor-tests.js', 'server');
+  api.addFiles('accolver:twilio-meteor-server-tests.js', 'server');
 });
 
 Npm.depends({ "twilio": "1.10.0" });
