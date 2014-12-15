@@ -1,7 +1,7 @@
 Package.describe({
   name: 'accolver:twilio-meteor',
   summary: "Twilio API Wrapper for Meteor",
-  version: '1.10.0',
+  version: '1.10.1',
   git: 'https://github.com/accolver/twilio-meteor.git'
 });
 
